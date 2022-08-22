@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Farly
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        Farly.shared.apiKey = "API_KEY"
+        Farly.shared.publisherId = "PUB_ID"
+        Farly.shared.apiDomain = "www.mob4pass.com" // optional, only if you have a specific one
+        
         // Override point for customization after application launch.
         return true
     }

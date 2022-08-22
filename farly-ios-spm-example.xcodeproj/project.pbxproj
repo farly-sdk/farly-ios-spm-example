@@ -13,6 +13,7 @@
 		30E9D08228B3C316002B4E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E9D08028B3C316002B4E20 /* Main.storyboard */; };
 		30E9D08428B3C318002B4E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E9D08328B3C318002B4E20 /* Assets.xcassets */; };
 		30E9D08728B3C318002B4E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E9D08528B3C318002B4E20 /* LaunchScreen.storyboard */; };
+		30E9D09028B3C338002B4E20 /* Farly in Frameworks */ = {isa = PBXBuildFile; productRef = 30E9D08F28B3C338002B4E20 /* Farly */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E9D09028B3C338002B4E20 /* Farly in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "farly-ios-spm-example";
+			packageProductDependencies = (
+				30E9D08F28B3C338002B4E20 /* Farly */,
+			);
 			productName = "farly-ios-spm-example";
 			productReference = 30E9D07728B3C316002B4E20 /* farly-ios-spm-example.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 30E9D06E28B3C316002B4E20;
+			packageReferences = (
+				30E9D08E28B3C338002B4E20 /* XCRemoteSwiftPackageReference "farly-ios-sdk" */,
+			);
 			productRefGroup = 30E9D07828B3C316002B4E20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30E9D08E28B3C338002B4E20 /* XCRemoteSwiftPackageReference "farly-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/farly-sdk/farly-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30E9D08F28B3C338002B4E20 /* Farly */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30E9D08E28B3C338002B4E20 /* XCRemoteSwiftPackageReference "farly-ios-sdk" */;
+			productName = Farly;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30E9D06F28B3C316002B4E20 /* Project object */;
 }

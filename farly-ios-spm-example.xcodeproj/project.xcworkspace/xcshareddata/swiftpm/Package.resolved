@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "farly-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/farly-sdk/farly-ios-sdk",
+      "state" : {
+        "branch" : "master",
+        "revision" : "74ae50fb819205185a67aeb8b1c0f60cc44a43ad"
+      }
+    }
+  ],
+  "version" : 2
+}
