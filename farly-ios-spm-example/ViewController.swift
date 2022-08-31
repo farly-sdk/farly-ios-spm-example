@@ -50,11 +50,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onTapOpenWallInBrowser(_ sender: Any) {
-        Farly.shared.showOfferwall(request: request, mode: .browser)
+        Farly.shared.showOfferwallInBrowser(request: request)
     }
     
     @IBAction func onTapOpenWallInApp(_ sender: Any) {
-        Farly.shared.showOfferwall(request: request, mode: .webView)
+        Farly.shared.showOfferwallInWebview(request: request)
     }
 
 }
