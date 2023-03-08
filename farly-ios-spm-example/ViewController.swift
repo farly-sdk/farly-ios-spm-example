@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         request.userGender = .Male // optional
         request.userSignupDate = Date(timeIntervalSince1970: 1643645866) // optional
         request.callbackParameters = ["param0", "param1"] // optional, custom parameters to get in the callback, passed as-is by Farly server
+        request.countryCode = "US"
         
         return request
     }()
